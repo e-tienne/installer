@@ -1,16 +1,3 @@
-variable "name" {
-  type = string
-}
-
-variable "instance_count" {
-  type = number
-}
-
-variable "ignition" {
-  type    = string
-  default = ""
-}
-
 variable "resource_pool" {
   type = string
 }
@@ -27,10 +14,6 @@ variable "network" {
   type = string
 }
 
-variable "cluster_domain" {
-  type = string
-}
-
 variable "datacenter" {
   type = string
 }
@@ -43,28 +26,24 @@ variable "guest_id" {
   type = string
 }
 
-variable "memory" {
+variable "master_memory" {
   type = number
 }
 
-variable "num_cpus" {
+variable "master_num_cpus" {
   type = number
 }
 
-variable "cores_per_socket" {
+variable "master_cores_per_socket" {
   type = number
 }
 
-variable "disk_size" {
+variable "master_disk_size" {
   type = number
 }
 
 variable "tags" {
   type = list
-}
-
-variable "cluster_id" {
-  type = string
 }
 
 variable "thin_disk" {
